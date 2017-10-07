@@ -1,0 +1,15 @@
+<link rel= "stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/upload.css')}}">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<html>
+   <body class="container" style="background: #DCE775">   
+      <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data" class="form-group">
+         <input type = "file" name = "file" required class="btn btn-dark"/>
+         <button type = "submit" class="btn btn-primary btn-block btn-large" style="margin-top: 35px;"><i class="fa fa-paper-plane-o">Submit</i></button>
+      </form>      
+   </body>
+</html>
